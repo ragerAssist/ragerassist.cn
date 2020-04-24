@@ -1,7 +1,7 @@
 ---
 title: 原创：命令行备忘录 cheat 的安装与配置
 date: 2020-04-23 14:27:06
-updated: 2020-04-23 22:53:26
+updated: 2020-04-24 13:16:31
 categories: 工具
 mathjax: false
 tags:
@@ -38,9 +38,17 @@ git config --global core.editor <editor>
 > cat $cheat\git
 ```
 
-说到这里，你可能已经想要自己实现一个这样的软件，来更好的管理这些备忘录了，但我们无需这么做，虽然那将会很有趣，因为已经有人实现了这样的一个软件，那个软件就是**cheat**，该项目开源在GitHub上，这是该项目的地址 <https://github.com/cheat/cheat>。
+进一步地，你可能想要将其封装成一个函数，甚至是一个cmdlet：
 
-我在这篇文章中将向你们讲述这个软件在Windows系统上的安装与配置的过程，因为在Windows系统中安装这个软件并不是那么方便的。
+``` powershell
+> function Get-Cheat ($Name) {
+>   cat $cheat\$Name
+> }
+```
+
+说到这里，你可能已经想要自己动手实现一个这样的工具，来更好的管理这些备忘录了，但我们无需这么做，虽然那将会很有趣，因为已经有人为我们实现了它，那就是**cheat**，该项目开源在GitHub上，这是该项目的地址 <https://github.com/cheat/cheat>。
+
+我在这篇文章中将向你们介绍这个软件在Windows系统上的安装与配置的过程，因为在Windows系统中安装这个软件并不是那么方便的。
 
 ---
 
